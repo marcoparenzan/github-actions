@@ -1,0 +1,8 @@
+name: handle-issue
+on:
+  issues
+jobs:
+  default:
+   runs-on: ubuntu-latest
+   steps:
+     - run echo '${{ github }}'
