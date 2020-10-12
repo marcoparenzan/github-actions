@@ -1,0 +1,11 @@
+name: every-minute
+on: 
+  schedule:
+    - cron: '*/1 * * * *'
+
+jobs:
+  one:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo '${{ github.event.inputs }}'
+   
