@@ -4,4 +4,4 @@ jobs:
   default:
     runs-on: ubuntu-latest
     steps:
-      - run: echo 'push'
+      - run: echo '${{ github.event }}'
